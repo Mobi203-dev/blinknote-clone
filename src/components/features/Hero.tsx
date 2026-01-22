@@ -6,12 +6,12 @@ export function Hero({ onAuth }: { onAuth?: () => void }) {
   const [inputValue, setInputValue] = useState("");
 
   const suggestedIdeas = [
-    { icon: Layout, label: "AI Landing Page Builder" },
-    { icon: Zap, label: "AI Customer Support Chatbot Platform" },
-    { icon: Layout, label: "AI Interview Screening Platform" },
-    { icon: Zap, label: "Sales Pitch Presentation" },
-    { icon: Zap, label: "Referral Program Platform" },
-    { icon: Globe, label: "AI Social Media Manager" },
+    { icon: Layout, label: "Brainstorm business ideas" },
+    { icon: Zap, label: "Weekly shopping list" },
+    { icon: Layout, label: "Project milestones" },
+    { icon: Zap, label: "Meeting summary" },
+    { icon: Zap, label: "Reading list 2026" },
+    { icon: Globe, label: "Travel itinerary" },
   ];
 
   return (
@@ -21,23 +21,22 @@ export function Hero({ onAuth }: { onAuth?: () => void }) {
       
       <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
         <span className="text-sm font-medium text-muted-foreground mb-4 block animate-in [animation-delay:0ms]">
-          AI App Builder
+          Minimalist Note Taking
         </span>
         <h1 className="text-6xl md:text-8xl font-serif font-bold tracking-tight mb-8 animate-in [animation-delay:100ms]">
           Don't just think it <br />
-          <span className="italic text-glow">Blink</span> it
+          <span className="italic text-glow">Note</span> it
         </h1>
         <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto animate-in [animation-delay:200ms]">
-          Build websites, SaaS, and mobile apps in minutes by chatting with AI.
-          Everything is included: database, hosting, AI, and more.
-          No coding skills required.
+          Capture your thoughts, ideas, and tasks instantly with a distraction-free interface.
+          Your personal lightning-fast workspace.
         </p>
 
         {/* Chat Input Area */}
         <div className="relative max-w-3xl mx-auto mb-12 animate-in [animation-delay:300ms]">
           <div className="glass-card rounded-2xl p-4 shadow-2xl transition-all duration-300 focus-within:ring-2 focus-within:ring-primary/20">
             <textarea
-              placeholder="Build an AI website analyzer"
+              placeholder="Jot down a quick thought..."
               className="w-full bg-transparent border-none focus:ring-0 text-lg resize-none min-h-[100px] py-2 px-2"
               value={inputValue}
               onChange={(e) => setInputValue(e.target.value)}

@@ -7,10 +7,10 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-16">
           <div className="lg:col-span-2">
             <a href="/" className="text-2xl font-bold tracking-tighter mb-4 block">
-              Blink
+              BlinkNote
             </a>
             <p className="text-muted-foreground mb-6 max-w-xs">
-              The AI-powered platform for building production-ready applications in minutes.
+              The minimalist note-taking platform for capturing ideas in seconds.
             </p>
             <div className="flex gap-4">
               <a href="#" className="p-2 rounded-full hover:bg-muted transition-colors"><Twitter className="h-5 w-5" /></a>

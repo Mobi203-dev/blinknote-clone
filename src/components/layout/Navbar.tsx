@@ -27,7 +27,7 @@ export function Navbar({ onAuth }: { onAuth?: () => void }) {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center gap-8">
             <a href="/" className="text-2xl font-bold tracking-tighter">
-              Blink
+              BlinkNote
             </a>
             <div className="hidden md:flex items-center gap-6">
               <a href="#explore" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Explore</a>

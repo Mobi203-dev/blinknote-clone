@@ -3,46 +3,46 @@ import { Heart, GitFork } from "lucide-react";
 
 const projects = [
   {
-    title: "Guidelines Ready Site",
+    title: "Startup Idea Board",
     author: "v00m8b78ywf3wo4z",
-    image: "https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FPftmoLEABScHwzRhIHbUfFVgBdA2%2FFireShotCapture019-Blink-AIAppBuilder-BuildAppsinMinuteswithAI-blinknew__63137981.png?alt=media&token=89c90676-d82e-49b5-bd6a-1a27a8cb9aa7",
-    likes: 0,
-    clones: 0
+    image: "https://images.unsplash.com/photo-1517842645767-c639042777db?q=80&w=2670&auto=format&fit=crop",
+    likes: 124,
+    clones: 45
   },
   {
-    title: "AI Thumbnail Wizard",
+    title: "Daily Stoic Journal",
     author: "Amrith eshwar",
-    image: "https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FPftmoLEABScHwzRhIHbUfFVgBdA2%2FFireShotCapture019-Blink-AIAppBuilder-BuildAppsinMinuteswithAI-blinknew__63137981.png?alt=media&token=89c90676-d82e-49b5-bd6a-1a27a8cb9aa7",
-    likes: 0,
-    clones: 0
+    image: "https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=2573&auto=format&fit=crop",
+    likes: 89,
+    clones: 12
   },
   {
-    title: "Influence Metrics Hub",
+    title: "Grocery List Template",
     author: "Arya Chandra",
-    image: "https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FPftmoLEABScHwzRhIHbUfFVgBdA2%2FFireShotCapture019-Blink-AIAppBuilder-BuildAppsinMinuteswithAI-blinknew__63137981.png?alt=media&token=89c90676-d82e-49b5-bd6a-1a27a8cb9aa7",
-    likes: 0,
-    clones: 0
+    image: "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?q=80&w=2668&auto=format&fit=crop",
+    likes: 56,
+    clones: 8
   },
   {
-    title: "Industrial Mirror Web",
+    title: "Project Milestone Tracker",
     author: "Niso Cosmetology",
-    image: "https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FPftmoLEABScHwzRhIHbUfFVgBdA2%2FFireShotCapture019-Blink-AIAppBuilder-BuildAppsinMinuteswithAI-blinknew__63137981.png?alt=media&token=89c90676-d82e-49b5-bd6a-1a27a8cb9aa7",
-    likes: 0,
-    clones: 0
+    image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=2672&auto=format&fit=crop",
+    likes: 210,
+    clones: 67
   },
   {
-    title: "Fashion Store Pro Template",
+    title: "Fitness Goals 2026",
     author: "Saurabh Hagawane",
-    image: "https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FPftmoLEABScHwzRhIHbUfFVgBdA2%2FFireShotCapture019-Blink-AIAppBuilder-BuildAppsinMinuteswithAI-blinknew__63137981.png?alt=media&token=89c90676-d82e-49b5-bd6a-1a27a8cb9aa7",
-    likes: 0,
-    clones: 0
+    image: "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?q=80&w=2670&auto=format&fit=crop",
+    likes: 43,
+    clones: 5
   },
   {
-    title: "TagTracker",
+    title: "Book Summary: Deep Work",
     author: "2NPHybF0N4PiXKp2",
-    image: "https://firebasestorage.googleapis.com/v0/b/blink-451505.firebasestorage.app/o/user-uploads%2FPftmoLEABScHwzRhIHbUfFVgBdA2%2FFireShotCapture019-Blink-AIAppBuilder-BuildAppsinMinuteswithAI-blinknew__63137981.png?alt=media&token=89c90676-d82e-49b5-bd6a-1a27a8cb9aa7",
-    likes: 0,
-    clones: 0
+    image: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?q=80&w=2573&auto=format&fit=crop",
+    likes: 156,
+    clones: 34
   }
 ];
 
@@ -51,8 +51,8 @@ export function CommunityProjects() {
     <section id="explore" className="py-24 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4">From the Community</h2>
-          <p className="text-muted-foreground text-lg">Discover amazing projects built by our community</p>
+          <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4">Explore Public Notes</h2>
+          <p className="text-muted-foreground text-lg">Discover how others are using BlinkNote to organize their lives.</p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
