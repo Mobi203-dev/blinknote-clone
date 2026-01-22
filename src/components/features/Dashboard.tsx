@@ -19,7 +19,8 @@ import {
   ArrowUp,
   Sparkles,
   Zap,
-  MoreHorizontal
+  MoreHorizontal,
+  Globe
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useAuth } from "@/hooks/useAuth";
