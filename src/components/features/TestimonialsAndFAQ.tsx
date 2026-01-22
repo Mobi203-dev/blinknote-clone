@@ -3,21 +3,21 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 
 const testimonials = [
   {
-    content: "I've tried every note app under the sun. Notion is too slow, Apple Notes is too simple. BlinkNote is the perfect 'in-between' - fast as light and always there when I need it.",
+    content: "Blink has completely changed how we build products. We went from idea to live app in a single afternoon. It's actually magic.",
     author: "Jeff Robinson",
     role: "Product Designer",
     social: Linkedin,
     rating: 5
   },
   {
-    content: "The distraction-free interface is a game changer. I've written more in the last week than I have in the last month. It just gets out of the way.",
+    content: "The best part about Blink is that it handles all the boring stuff. I just talk to the AI, and it gives me a full-stack app with auth and DB ready to go.",
     author: "Riccardo Vincenzi",
-    role: "Writer & Entrepreneur",
+    role: "Full-stack Developer",
     social: Linkedin,
     rating: 5
   },
   {
-    content: "Sync is flawless. I jot something down on my phone and it's there on my desktop before I can even look. Exactly what I wanted.",
+    content: "I've never seen anything like this. The speed and quality of the generated code are top-tier. Highly recommended for any startup.",
     author: "Chris R. Pettigrew, Sr",
     role: "Tech Consultant",
     social: Linkedin,
@@ -27,20 +27,20 @@ const testimonials = [
 
 const faqs = [
   {
-    question: "What is BlinkNote?",
-    answer: "BlinkNote is a minimalist note-taking app built with the same speed-first philosophy as blink.new. It's designed for capturing quick thoughts and tasks without the clutter of traditional apps."
+    question: "What is Blink?",
+    answer: "Blink is an AI-powered platform that builds full-stack web and mobile applications from natural language prompts. It includes hosting, database, authentication, and more."
   },
   {
-    question: "Is it free?",
-    answer: "Yes, BlinkNote has a generous free tier that includes instant sync and secure storage for all your personal notes."
+    question: "Do I need to know how to code?",
+    answer: "No. Blink is designed for both non-technical founders and experienced developers who want to move 10x faster."
   },
   {
-    question: "How do I save a note?",
-    answer: "Just type in the main input box and press Enter. Your note is instantly saved to our secure database."
+    question: "Is it really full-stack?",
+    answer: "Yes. Every project in Blink comes with a built-in database, authentication system, and edge functions for complex server-side logic."
   },
   {
-    question: "Can I use it on mobile?",
-    answer: "Absolutely. BlinkNote is fully responsive and works beautifully as a web app on any smartphone or tablet."
+    question: "Can I export my code?",
+    answer: "Yes, you have full access to the source code and can download or sync it to GitHub at any time."
   }
 ];
 
@@ -50,13 +50,13 @@ export function TestimonialsAndFAQ({ onAuth }: { onAuth?: () => void }) {
       <section className="py-24 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-6xl font-serif font-bold mb-6">Built for Thinkers</h2>
-            <p className="text-muted-foreground text-xl">Join the community of productive minds using BlinkNote.</p>
+            <h2 className="text-4xl md:text-6xl font-serif font-bold mb-6 text-glow">Loved by Builders</h2>
+            <p className="text-muted-foreground text-xl">Join thousands of developers building the future on Blink.</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {testimonials.map((t, i) => (
-              <div key={i} className="glass-card p-8 rounded-2xl flex flex-col justify-between">
+              <div key={i} className="glass-card p-8 rounded-2xl flex flex-col justify-between group hover:scale-[1.02] transition-all">
                 <div>
                   <div className="flex gap-1 mb-6">
                     {[...Array(t.rating)].map((_, i) => (
@@ -80,11 +80,11 @@ export function TestimonialsAndFAQ({ onAuth }: { onAuth?: () => void }) {
         </div>
       </section>
 
-      <section className="py-24 bg-background border-t">
+      <section className="py-24 bg-background border-t border-white/5">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6">Frequently Asked Questions</h2>
-            <p className="text-muted-foreground">Everything you need to know about BlinkNote</p>
+            <p className="text-muted-foreground">Everything you need to know about building on Blink</p>
           </div>
           
           <Accordion type="single" collapsible className="w-full space-y-4">
@@ -100,16 +100,14 @@ export function TestimonialsAndFAQ({ onAuth }: { onAuth?: () => void }) {
             ))}
           </Accordion>
           
-          <div className="mt-16 flex flex-col items-center gap-8">
-            <div className="text-center pt-20">
-              <h3 className="text-5xl md:text-7xl font-serif font-bold tracking-tight mb-4 italic">
-                Don't just think it, <span className="text-glow">Note</span> it.
-              </h3>
-              <p className="text-muted-foreground text-xl mb-10">Capture your first note in seconds.</p>
-              <div className="flex gap-4 justify-center">
-                <button className="px-8 py-3 rounded-full bg-primary text-white font-bold" onClick={onAuth}>Get started for free →</button>
-              </div>
-            </div>
+          <div className="mt-20 text-center">
+            <h3 className="text-5xl md:text-7xl font-serif font-bold tracking-tight mb-8 italic">
+              Don't just think it, <span className="text-glow text-primary">Blink</span> it.
+            </h3>
+            <p className="text-muted-foreground text-xl mb-10">Start building your next big idea today.</p>
+            <Button size="lg" className="rounded-full px-10 h-14 text-lg font-bold bg-primary hover:bg-primary/90 shadow-xl shadow-primary/20" onClick={onAuth}>
+              Get Started for Free
+            </Button>
           </div>
         </div>
       </section>

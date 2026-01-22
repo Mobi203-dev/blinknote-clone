@@ -59,7 +59,7 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-[#0A0A0A] text-foreground dark;
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -76,7 +76,21 @@
   }
 
   .glass-card {
-    @apply bg-card/40 backdrop-blur-md border border-white/10;
+    @apply bg-white/[0.03] backdrop-blur-md border border-white/[0.08] shadow-2xl;
+  }
+
+  /* Custom Scrollbar */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-white/10 rounded-full;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    @apply bg-white/20;
   }
 }
 
